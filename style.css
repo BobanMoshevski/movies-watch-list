@@ -1,0 +1,132 @@
+body {
+  font-family: "Reddit Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 800;
+  padding: 24px 0 24px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hover-effect:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.modal ul li {
+  cursor: pointer;
+}
+
+.list-wrapper {
+  min-height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #000;
+  padding: 0;
+}
+
+#moviesList li {
+  display: flex;
+  cursor: pointer;
+}
+
+#searchMoviesList li {
+  cursor: pointer;
+}
+
+#moviesList li div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.movie-image {
+  width: 50px;
+  min-height: 50px;
+}
+
+.movie-description-layout {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.movie-description-layout-image {
+  max-width: 50%;
+}
+
+.modal-width {
+  max-width: 60% !important;
+}
+
+/* Loader styles */
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001; /* Ensure it's above the overlay */
+}
+
+/* Overlay styles */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1000; /* Ensure it's below the loader */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
