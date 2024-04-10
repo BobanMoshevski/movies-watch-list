@@ -1723,7 +1723,7 @@ function appendDescriptionChild(childId, movie) {
       </h2>
       <div
         id="decsription1"
-        class="d-flex justify-content-around w-100 border border-dark rounded p-2 gap-5"
+        class="d-flex flex-wrap justify-content-around w-100 border border-dark rounded p-2 gap-5"
       >
         <p class="border-end border-dark">Released: ${movie.Released}</p>
         <p class="border-end border-dark">Genre: ${movie.Genre}</p>
@@ -1732,7 +1732,7 @@ function appendDescriptionChild(childId, movie) {
       </div>
       <div
         id="decsription2"
-        class="d-flex justify-content-around w-100 p-2 gap-5"
+        class="d-flex flex-wrap justify-content-around w-100 p-2 gap-5"
       >
         <h3 class="border-end border-dark">Director: ${movie.Director}</h3>
         <h3 class="border-end border-dark">Writer: ${movie.Writer}</h3>
@@ -1740,7 +1740,7 @@ function appendDescriptionChild(childId, movie) {
       </div>
       <div
         id="decsription3"
-        class="d-flex justify-content-around w-100 border border-dark rounded p-2 gap-5"
+        class="d-flex flex-wrap justify-content-around w-100 border border-dark rounded p-2 gap-5"
       >
         <p class="border-end border-dark">Language: ${movie.Language}</p>
         <p class="border-end border-dark">Country: ${movie.Country}</p>
@@ -1751,7 +1751,7 @@ function appendDescriptionChild(childId, movie) {
       </p>
       <div
         id="decsription4"
-        class="d-flex justify-content-around align-items-center flex-wrap gap-3 w-100 p-4 gap-5"
+        class="d-flex flex-wrap justify-content-around align-items-center flex-wrap gap-3 w-100 p-4 gap-5"
       >
         <button id="addToWatchList" class="btn btn-dark">Add to watch list</button>
         <button id="removeToWatchList" class="btn btn-dark">Remove to watch list</button>
